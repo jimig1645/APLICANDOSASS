@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #9fb1e4; }
+  body header {
+    height: 40vh;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/DefPuebloCABA_-_Esquina_Homero_Manzi_Boedo.jpg/4592px-Mapcarta.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 39.95%;
+    background-position-x: 60%;
+    background-clip: inherit; }
+    body header h1 {
+      text-align: center;
+      margin-bottom: 5%;
+      color: #050505;
+      font-weight: bolder;
+      font-size: 40px; }
+    body header .contenedor {
+      display: flex;
+      justify-content: space-around; }
+
+@keyframes girar {
+  from {
+    transform: isolate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+      body header .contenedor .contenedor__logo img {
+        animation-name: girar;
+        animation-iteration-count: infinite;
+        animation-duration: 25s;
+        margin-top: -30%;
+        margin-left: -100%;
+        border-radius: 100%; }
+      body header .contenedor ul {
+        padding-left: -5em;
+        display: flex;
+        justify-items: space-around;
+        background-color: grey;
+        border-style: double; }
+        body header .contenedor ul li {
+          list-style: none;
+          border-right: solid;
+          padding-right: 10px;
+          padding-left: 10px; }
+          body header .contenedor ul li button {
+            font-weight: bolder;
+            background-color: grey;
+            border: none; }
+            body header .contenedor ul li button a {
+              text-decoration: none;
+              color: black; }
+        body header .contenedor ul .contacto {
+          border-right: none; }
+          body header .contenedor ul .contacto button {
+            font-weight: bolder;
+            background-color: grey;
+            border: none; }
+  body main {
+    height: 80vh; }
+    body main .quienesSomos {
+      text-align: center; }
+    body main .quienesSomos__titulo {
+      margin-top: 1vh;
+      margin-bottom: 1vh; }
+    body main h3 {
+      text-align: center;
+      margin-top: 10vh; }
+    body main .gruposLiterarios {
+      justify-content: center;
+      display: grid;
+      grid-template-rows: 2fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "boedo" "florida";
+      height: 30vh; }
+      body main .gruposLiterarios .boedo {
+        grid-area: "boedo";
+        text-align: center; }
+      body main .gruposLiterarios .florida {
+        grid-area: "florida";
+        text-align: center; }
+    body main .tango {
+      text-align: center;
+      margin-top: 5em;
+      margin-bottom: 20em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      background: radial-gradient(circle, #c3cfe6, #e0d0d0);
+      margin-left: 8em;
+      margin-right: 8em;
+      border-radius: 20%;
+      border-left: solid;
+      border-right: solid;
+      border-width: 0.6em; }
+  body .imagenes {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: -30em;
+    margin-top: 20em;
+    padding-top: 2em;
+    background: radial-gradient(circle, #b7caeb, #e0d0d0);
+    border-radius: 10%;
+    border-top: solid;
+    border-width: 0.8em;
+    border-color: grey; }
+
+@keyframes girar2 {
+  from {
+    transform: isolate(0deg); }
+  to {
+    transform: rotate(180deg); } }
+    body .imagenes .borges {
+      display: flex;
+      flex-flow: column;
+      margin-right: 8rem;
+      height: 300px;
+      width: 100px; }
+    body .imagenes .homeroManzi {
+      margin-left: 8rem;
+      display: flex;
+      flex-flow: column;
+      height: 280px;
+      width: 100px; }
+      body .imagenes .homeroManzi .buttonSection {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        border: none;
+        background-color: grey;
+        text-align: center;
+        border-radius: 10%; }
+    body .imagenes .robertoArlt img {
+      animation-name: girar2;
+      animation-iteration-count: 1;
+      animation-duration: 5s; }
+    body .imagenes .robertoArlt .buttonSection1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: larger;
+      border: none;
+      background-color: grey;
+      text-align: center;
+      border-radius: 10%; }
+    body .imagenes .borges {
+      display: flex;
+      flex-flow: column;
+      margin-right: 8rem;
+      height: 300px;
+      width: 100px; }
+      body .imagenes .borges .buttonSection {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        border: none;
+        background-color: grey;
+        text-align: center;
+        border-radius: 10%; }
+  body footer {
+    height: 40vh;
+    padding-top: 50em;
+    display: flex;
+    justify-content: space-around;
+    font-size: small; }
+    body footer .footera {
+      text-align: center; }
+      body footer .footera h4 {
+        font-size: small; }
+      body footer .footera h5 {
+        font-size: x-small;
+        font-weight: bolder; }
+    body footer .footerImg {
+      width: 10em; }
+      body footer .footerImg img {
+        width: 2em;
+        border: none; }
+
+@media screen and (max-width: 480px) {
+  body header .contenedor {
+    display: flex;
+    justify-content: space-around;
+    background-color: #9fb1e4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20em; }
+    body header .contenedor .contenedor__logo {
+      width: 1rem;
+      margin-top: 4rem; }
+    body header .contenedor nav ul {
+      display: flex;
+      flex-flow: column wrap;
+      margin-left: 2em;
+      padding-left: 0em;
+      border-style: none; }
+      body header .contenedor nav ul li {
+        border: double;
+        padding: 1rem; }
+      body header .contenedor nav ul .contacto {
+        border-right: black;
+        border-right: double; }
+  body main {
+    margin-top: 10em; }
+    body main .tango {
+      margin-left: 0em;
+      margin-right: 0em; }
+  body .imagenes {
+    margin-bottom: 5em;
+    margin-top: 20em;
+    padding-top: 2em;
+    background: none;
+    background-color: #9fb1e4;
+    border-radius: 0%;
+    border-top: none;
+    border-width: 0em;
+    border-color: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    margin-left: 5em; }
+    body .imagenes .homeroManzi {
+      margin: 0em;
+      margin-right: 2em; }
+      body .imagenes .homeroManzi img {
+        width: 6em;
+        height: 10em; }
+      body .imagenes .homeroManzi .borges img {
+        width: 100px;
+        margin-left: -30px; }
+      body .imagenes .homeroManzi .robertoArlt img {
+        margin-left: -10px; }
+  body .footerIndex {
+    margin-top: -40em; } }
+
+@media screen and (max-width: 1000px) {
+  body header .contenedor .contenedor__logo {
+    width: 1rem;
+    margin-top: 4rem;
+    margin-left: 1.5rem; }
+  body .imagenes .homeroManzi img {
+    width: 6em;
+    height: 9em; }
+  body .imagenes .robertoArlt img {
+    width: 6em;
+    height: 9em; }
+  body .imagenes .borges img {
+    width: 6em;
+    height: 9em; } }
+
+@media screen and (max-width: 800px) {
+  body .imagenes {
+    display: flex; }
+    body .imagenes .robertoArlt {
+      margin-left: 2em; }
+    body .imagenes .borges {
+      margin-left: 2em; }
+    body .imagenes .homeroManzi {
+      margin-left: 2em;
+      margin-right: 1em; } }
+
+@media screen and (min-width: 420px) and (max-width: 672px) {
+  body header nav ul {
+    margin-left: -2em; } }
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  body header .contenedor .contenedor__logo {
+    margin-left: 2em; } }
+
+@media screen and (min-width: 420px) and (max-width: 480px) {
+  body section .robertoArlt .buttonSection1 {
+    margin-right: 10em; } }
+
+@media screen and (min-width: 380px) and (max-width: 419px) {
+  body section .robertoArlt .buttonSection1 {
+    margin-right: 7em; } }
